@@ -58,7 +58,7 @@ end)
 TriggerEvent('es:addGroupCommand', 'noclip', "admin", function(source, args, user)
 	TriggerClientEvent("es_admin:noclip", source)
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Kicking
@@ -69,7 +69,7 @@ TriggerEvent('es:addGroupCommand', 'kick', "mod", function(source, args, user)
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -89,7 +89,7 @@ TriggerEvent('es:addGroupCommand', 'kick', "mod", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Banning
@@ -99,7 +99,7 @@ TriggerEvent('es:addGroupCommand', 'ban', "admin", function(source, args, user)
 			local player = tonumber(args[2])
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 					if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-						TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+						TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 						return
 					end
 				local time = args[3]
@@ -150,7 +150,7 @@ TriggerEvent('es:addGroupCommand', 'ban', "admin", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 function stringsplit(self, delimiter)
@@ -169,7 +169,7 @@ TriggerEvent('es:addGroupCommand', 'announce', "admin", function(source, args, u
 	table.remove(args, 1)
 	TriggerClientEvent('chatMessage', -1, "ANNOUNCEMENT", {255, 0, 0}, "" .. table.concat(args, " "))
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Freezing
@@ -181,7 +181,7 @@ TriggerEvent('es:addGroupCommand', 'freeze', "mod", function(source, args, user)
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -205,7 +205,7 @@ TriggerEvent('es:addGroupCommand', 'freeze', "mod", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Bring
@@ -217,7 +217,7 @@ TriggerEvent('es:addGroupCommand', 'bring', "mod", function(source, args, user)
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -230,7 +230,7 @@ TriggerEvent('es:addGroupCommand', 'bring', "mod", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Bring
@@ -242,7 +242,7 @@ TriggerEvent('es:addGroupCommand', 'slap', "admin", function(source, args, user)
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -255,7 +255,7 @@ TriggerEvent('es:addGroupCommand', 'slap', "admin", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Freezing
@@ -268,7 +268,7 @@ TriggerEvent('es:addGroupCommand', 'goto', "mod", function(source, args, user)
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(target)then
 					if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-						TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+						TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 						return
 					end
 
@@ -282,7 +282,7 @@ TriggerEvent('es:addGroupCommand', 'goto', "mod", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Kill yourself
@@ -299,7 +299,7 @@ TriggerEvent('es:addGroupCommand', 'slay', "admin", function(source, args, user)
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -312,7 +312,7 @@ TriggerEvent('es:addGroupCommand', 'slay', "admin", function(source, args, user)
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Crashing
@@ -323,7 +323,7 @@ TriggerEvent('es:addGroupCommand', 'crash', "superadmin", function(source, args,
 			-- User permission check
 			TriggerEvent("es:getPlayerFromId", player, function(target)
 				if(tonumber(target.permission_level) > tonumber(user.permission_level))then
-					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You're not allowed to target this person!")
+					TriggerClientEvent("chatMessage", source, "SYSTEM", {255, 0, 0}, "You cannot target this person.")
 					return
 				end
 
@@ -335,14 +335,14 @@ TriggerEvent('es:addGroupCommand', 'crash', "superadmin", function(source, args,
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
 		end
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 -- Position
 TriggerEvent('es:addGroupCommand', 'pos', "owner", function(source, args, user)
 	TriggerClientEvent('es_admin:givePosition', source)
 end, function(source, args, user)
-	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficienct permissions!")
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient Permissions.")
 end)
 
 

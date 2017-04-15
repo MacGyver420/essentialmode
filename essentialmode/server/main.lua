@@ -1,17 +1,11 @@
-﻿-- NO TOUCHY, IF SOMETHING IS WRONG CONTACT KANERSPS! --
--- NO TOUCHY, IF SOMETHING IS WRONG CONTACT KANERSPS! --
--- NO TOUCHY, IF SOMETHING IS WRONG CONTACT KANERSPS! --
--- NO TOUCHY, IF SOMETHING IS WRONG CONTACT KANERSPS! --
-
-
--- Server
+﻿-- Server
 Users = {}
 commands = {}
 settings = {}
 settings.defaultSettings = {
 	['banReason'] = "You are currently banned. Please go to: insertsite.com/bans",
-	['pvpEnabled'] = false,
-	['permissionDenied'] = false,
+	['pvpEnabled'] = true, -- allows people without trainers to pvp
+	['permissionDenied'] = true, -- shows permission denied
 	['debugInformation'] = false,
 	['startingCash'] = 0,
 	['enableRankDecorators'] = false

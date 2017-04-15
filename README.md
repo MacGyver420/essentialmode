@@ -15,6 +15,5 @@ Warning: We do not provide support regarding installation/bug reports for Essent
 5. Import the **.sql** file to your database.
 6. Add essentialmode to your AutoStartResources in citmp-server.yml
 
-
 ## Author
 [Kanersps](https://github.com/kanersps)
